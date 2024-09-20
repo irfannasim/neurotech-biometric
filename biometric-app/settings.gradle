@@ -1,0 +1,3 @@
+rootProject.name = 'biometric-app'
+include 'samples-utils'
+project(':samples-utils').projectDir = new File("D:/Workspaces/GitHub-InfotechAdmin/spark-biometric/utils")

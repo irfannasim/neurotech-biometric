@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: Samples utils
+Specification-Vendor: Neurotechnology
+Specification-Version: 13.1.0.0
+Implementation-Title: Samples utils
+Implementation-Version: 13.1.0.0
+Implementation-Vendor: Neurotechnology
+Codebase: *
+Permissions: all-permissions
+

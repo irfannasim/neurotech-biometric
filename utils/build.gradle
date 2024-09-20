@@ -1,0 +1,11 @@
+description = "Samples utils"
+
+apply from: "D:/Workspaces/GitHub-InfotechAdmin/spark-biometric/buildCommon/common.gradle"
+
+dependencies {
+	implementation ":neurotec-core"
+	implementation ":neurotec-licensing"
+	implementation ":jna"
+	implementation project.modules."commons-io"
+	implementation project.modules."flatlaf"
+}

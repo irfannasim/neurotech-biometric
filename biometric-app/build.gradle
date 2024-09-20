@@ -1,0 +1,41 @@
+description = "Biometric App"
+
+apply plugin: 'application'
+apply from: "D:/Workspaces/GitHub-InfotechAdmin/spark-biometric/buildCommon/common.gradle"
+mainClassName =  "com.neurotec.samples.SimpleFingersApplication";
+repositories {
+    mavenCentral()
+}
+dependencies {
+        implementation "com.sparkjava:spark-core:2.9.3"
+        implementation "com.google.code.gson:gson:2.10.1"
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
+        // SLF4J API
+        implementation 'org.slf4j:slf4j-api:1.7.36'
+        // SLF4J Simple Binding (for basic logging)
+        implementation 'org.slf4j:slf4j-simple:1.7.36'
+      // Jetty Server for Spark framework
+        implementation 'org.eclipse.jetty:jetty-server:9.4.48.v20220622'
+        implementation 'org.eclipse.jetty:jetty-servlet:9.4.48.v20220622'
+        implementation 'org.eclipse.jetty:jetty-webapp:9.4.48.v20220622'
+        implementation 'org.eclipse.jetty:jetty-util:9.4.48.v20220622'
+        implementation 'org.eclipse.jetty:jetty-http:9.4.48.v20220622'
+
+        // Jetty IO module for handling connections
+        implementation 'org.eclipse.jetty:jetty-io:9.4.48.v20220622'
+	implementation ":neurotec-core"
+	implementation ":neurotec-licensing"
+	implementation ":neurotec-gui"
+	implementation ":neurotec-media"
+	implementation ":neurotec-media-processing" 
+	implementation ":neurotec-biometrics"
+	implementation ":neurotec-biometrics-client"
+	implementation ":neurotec-biometrics-gui"
+	implementation ":neurotec-devices"
+	implementation ":jna"
+	implementation project.modules."flatlaf"
+	implementation project(":samples-utils")
+       
+}
+
+apply from: "D:/Workspaces/GitHub-InfotechAdmin/spark-biometric/buildCommon/run.gradle"

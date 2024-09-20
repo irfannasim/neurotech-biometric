@@ -1,0 +1,3 @@
+TRUE
+
+# If first line is TRUE, then Samples and Tutorials will use Trial Mode, if first line is FALSE or this file is not located in "Bin/Licenses" directory, then our Samples and Tutorials will use non-trial licenses.
